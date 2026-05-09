@@ -1,8 +1,8 @@
 package com.ecommerce.controllers;
 
-import com.ecommerce.dto.CategoryRequestDTO;
-import com.ecommerce.dto.CategoryResponseDTO;
-import com.ecommerce.services.CategoryService;
+import com.ecommerce.dto.category.CategoryRequestDTO;
+import com.ecommerce.dto.category.CategoryResponseDTO;
+import com.ecommerce.services.category.CategoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

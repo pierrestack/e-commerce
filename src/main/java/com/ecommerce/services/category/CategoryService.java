@@ -1,7 +1,7 @@
-package com.ecommerce.services;
+package com.ecommerce.services.category;
 
-import com.ecommerce.dto.CategoryRequestDTO;
-import com.ecommerce.dto.CategoryResponseDTO;
+import com.ecommerce.dto.category.CategoryRequestDTO;
+import com.ecommerce.dto.category.CategoryResponseDTO;
 
 import java.util.List;
 
