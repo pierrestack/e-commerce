@@ -1,0 +1,10 @@
+package com.ecommerce.dto.auth;
+
+import jakarta.validation.constraints.NotBlank;
+
+public record AuthRefreshTokenRequestDTO(
+
+        @NotBlank(message = "Refresh token is required")
+        String refreshToken
+) {
+}
