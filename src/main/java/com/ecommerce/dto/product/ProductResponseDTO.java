@@ -1,4 +1,4 @@
-package com.ecommerce.dto;
+package com.ecommerce.dto.product;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
