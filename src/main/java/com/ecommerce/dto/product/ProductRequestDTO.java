@@ -1,15 +1,19 @@
 package com.ecommerce.dto.product;
 
+import com.ecommerce.dto.productImage.ProductImageRequestDTO;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public record ProductRequestDTO(
         @NotBlank(message = "Name is required")
         String name,
 
+        @NotBlank(message = "Description is required")
         String description,
 
         @NotNull(message = "Price is required")
@@ -20,6 +24,10 @@ public record ProductRequestDTO(
         @Positive(message = "Stock must be positive")
         Integer stock,
 
-        Long categoryId
+        @NotNull(message = "Category ID is required")
+        Long categoryId,
+
+        @Valid
+        List<ProductImageRequestDTO> images
 ) {
 }

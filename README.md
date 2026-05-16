@@ -288,7 +288,6 @@ The API provides centralized exception handling.
 # 📌 Future Improvements
 
 * Swagger / OpenAPI Documentation
-* Role-Based Access Control (RBAC)
 * Pagination & Sorting
 * Product Image Upload
 * Order Management
