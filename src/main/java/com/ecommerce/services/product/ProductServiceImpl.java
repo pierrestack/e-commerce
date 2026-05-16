@@ -2,11 +2,14 @@ package com.ecommerce.services.product;
 
 import com.ecommerce.dto.product.ProductRequestDTO;
 import com.ecommerce.dto.product.ProductResponseDTO;
+import com.ecommerce.dto.productImage.ProductImageResponseDTO;
 import com.ecommerce.entities.Category;
 import com.ecommerce.entities.Product;
+import com.ecommerce.entities.ProductImage;
 import com.ecommerce.exceptions.ResourceNotFoundException;
 import com.ecommerce.repositories.CategoryRepository;
 import com.ecommerce.repositories.ProductRepository;
+import com.ecommerce.services.productImage.ProductImageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +20,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;
+    private final ProductImageService productImageService;
 
     @Override
     public ProductResponseDTO create(ProductRequestDTO dto) {
@@ -32,6 +36,9 @@ public class ProductServiceImpl implements ProductService {
                 .stock(dto.stock())
                 .category(category)
                 .build();
+
+        List<ProductImage> images = productImageService.mapToEntities(dto, product);
+        product.setImages(images);
 
         Product saved = productRepository.save(product);
 
@@ -98,7 +105,20 @@ public class ProductServiceImpl implements ProductService {
                 product.getPrice(),
                 product.getStock(),
                 product.getCategory().getName(),
-                product.getCreatedAt()
+                product.getCreatedAt(),
+                product.getImages()
+                        .stream()
+                        .map(image ->
+                                new ProductImageResponseDTO(
+                                        image.getId(),
+                                        image.getImageUrl(),
+                                        image.getAltText(),
+                                        image.getDisplayOrder(),
+                                        image.getType(),
+                                        image.getCreatedAt()
+                                )
+                        )
+                        .toList()
         );
     }
 }

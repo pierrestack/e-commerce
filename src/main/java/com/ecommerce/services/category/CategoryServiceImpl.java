@@ -3,6 +3,7 @@ package com.ecommerce.services.category;
 import com.ecommerce.dto.category.CategoryRequestDTO;
 import com.ecommerce.dto.category.CategoryResponseDTO;
 import com.ecommerce.dto.product.ProductResponseDTO;
+import com.ecommerce.dto.productImage.ProductImageResponseDTO;
 import com.ecommerce.entities.Category;
 import com.ecommerce.repositories.CategoryRepository;
 import lombok.RequiredArgsConstructor;
@@ -84,7 +85,17 @@ public class CategoryServiceImpl implements CategoryService {
                                 product.getPrice(),
                                 product.getStock(),
                                 category.getName(),
-                                product.getCreatedAt()
+                                product.getCreatedAt(),
+                                product.getImages()
+                                        .stream()
+                                        .map(image -> new ProductImageResponseDTO(
+                                                image.getId(),
+                                                image.getImageUrl(),
+                                                image.getAltText(),
+                                                image.getDisplayOrder(),
+                                                image.getType(),
+                                                image.getCreatedAt()
+                                        )).toList()
                         ))
                         .toList()
         );
