@@ -9,6 +9,8 @@
 
 A modern RESTful E-Commerce API built with Spring Boot, featuring JWT authentication, Docker support, MySQL integration, exception handling, and layered architecture.
 
+**Project Status:** 🚧 Under Active Development
+
 ---
 
 # 🚀 Features
