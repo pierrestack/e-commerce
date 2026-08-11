@@ -1,6 +1,6 @@
-package com.ecommerce.controllers;
+package com.ecommerce.upload.controller;
 
-import com.ecommerce.dto.uploadImage.UploadResponseDTO;
+import com.ecommerce.upload.dto.UploadResponseDTO;
 import com.ecommerce.services.storage.ImageStorageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

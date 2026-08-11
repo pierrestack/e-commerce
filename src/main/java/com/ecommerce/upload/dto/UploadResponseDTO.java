@@ -1,4 +1,4 @@
-package com.ecommerce.dto.uploadImage;
+package com.ecommerce.upload.dto;
 
 public record UploadResponseDTO(
 
