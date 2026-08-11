@@ -1,6 +1,6 @@
-package com.ecommerce.dto.category;
+package com.ecommerce.category.dto;
 
-import com.ecommerce.dto.product.ProductResponseDTO;
+import com.ecommerce.product.dto.ProductResponseDTO;
 
 import java.util.List;
 

@@ -1,5 +1,6 @@
-package com.ecommerce.entities;
+package com.ecommerce.category.entity;
 
+import com.ecommerce.product.entity.Product;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

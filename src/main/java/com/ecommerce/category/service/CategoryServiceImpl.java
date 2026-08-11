@@ -1,11 +1,11 @@
-package com.ecommerce.services.category;
+package com.ecommerce.category.service;
 
-import com.ecommerce.dto.category.CategoryRequestDTO;
-import com.ecommerce.dto.category.CategoryResponseDTO;
-import com.ecommerce.dto.product.ProductResponseDTO;
+import com.ecommerce.category.dto.CategoryRequestDTO;
+import com.ecommerce.category.dto.CategoryResponseDTO;
+import com.ecommerce.product.dto.ProductResponseDTO;
 import com.ecommerce.dto.productImage.ProductImageResponseDTO;
-import com.ecommerce.entities.Category;
-import com.ecommerce.repositories.CategoryRepository;
+import com.ecommerce.category.entity.Category;
+import com.ecommerce.category.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
