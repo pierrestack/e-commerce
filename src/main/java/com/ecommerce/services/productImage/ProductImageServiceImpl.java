@@ -1,13 +1,13 @@
 package com.ecommerce.services.productImage;
 
-import com.ecommerce.dto.product.ProductRequestDTO;
+import com.ecommerce.product.dto.ProductRequestDTO;
 import com.ecommerce.dto.productImage.ProductImageRequestDTO;
 import com.ecommerce.dto.productImage.ProductImageResponseDTO;
-import com.ecommerce.entities.Product;
+import com.ecommerce.product.entity.Product;
 import com.ecommerce.entities.ProductImage;
 import com.ecommerce.exceptions.ResourceNotFoundException;
 import com.ecommerce.repositories.ProductImageRepository;
-import com.ecommerce.repositories.ProductRepository;
+import com.ecommerce.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

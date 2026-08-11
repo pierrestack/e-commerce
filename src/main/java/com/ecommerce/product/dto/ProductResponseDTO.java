@@ -1,4 +1,4 @@
-package com.ecommerce.dto.product;
+package com.ecommerce.product.dto;
 
 import com.ecommerce.dto.productImage.ProductImageResponseDTO;
 

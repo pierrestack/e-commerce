@@ -1,5 +1,7 @@
-package com.ecommerce.entities;
+package com.ecommerce.product.entity;
 
+import com.ecommerce.category.entity.Category;
+import com.ecommerce.entities.ProductImage;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

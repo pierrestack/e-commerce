@@ -1,9 +1,9 @@
 package com.ecommerce.services.productImage;
 
-import com.ecommerce.dto.product.ProductRequestDTO;
+import com.ecommerce.product.dto.ProductRequestDTO;
 import com.ecommerce.dto.productImage.ProductImageRequestDTO;
 import com.ecommerce.dto.productImage.ProductImageResponseDTO;
-import com.ecommerce.entities.Product;
+import com.ecommerce.product.entity.Product;
 import com.ecommerce.entities.ProductImage;
 
 import java.util.List;
