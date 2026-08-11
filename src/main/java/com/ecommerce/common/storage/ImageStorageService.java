@@ -1,4 +1,4 @@
-package com.ecommerce.services.storage;
+package com.ecommerce.common.storage;
 
 import org.springframework.web.multipart.MultipartFile;
 

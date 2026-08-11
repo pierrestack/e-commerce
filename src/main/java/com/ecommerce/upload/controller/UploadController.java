@@ -1,7 +1,7 @@
 package com.ecommerce.upload.controller;
 
 import com.ecommerce.upload.dto.UploadResponseDTO;
-import com.ecommerce.services.storage.ImageStorageService;
+import com.ecommerce.common.storage.ImageStorageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

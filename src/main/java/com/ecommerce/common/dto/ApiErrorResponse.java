@@ -1,4 +1,4 @@
-package com.ecommerce.dto.exception;
+package com.ecommerce.common.dto;
 
 import java.time.LocalDateTime;
 

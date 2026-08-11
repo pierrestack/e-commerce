@@ -1,7 +1,7 @@
-package com.ecommerce.services.storage.impl;
+package com.ecommerce.common.storage.impl;
 
 import com.cloudinary.Cloudinary;
-import com.ecommerce.services.storage.ImageStorageService;
+import com.ecommerce.common.storage.ImageStorageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

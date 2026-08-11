@@ -1,6 +1,6 @@
 package com.ecommerce.auth.security;
 
-import com.ecommerce.dto.exception.ApiErrorResponse;
+import com.ecommerce.common.dto.ApiErrorResponse;
 import tools.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.*;
 import org.springframework.http.HttpStatus;

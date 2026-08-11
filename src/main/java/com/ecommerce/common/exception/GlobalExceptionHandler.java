@@ -1,6 +1,6 @@
-package com.ecommerce.exceptions;
+package com.ecommerce.common.exception;
 
-import com.ecommerce.dto.exception.ApiErrorResponse;
+import com.ecommerce.common.dto.ApiErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

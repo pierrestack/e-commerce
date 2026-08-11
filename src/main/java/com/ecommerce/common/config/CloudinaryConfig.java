@@ -1,4 +1,4 @@
-package com.ecommerce.config;
+package com.ecommerce.common.config;
 
 import com.cloudinary.Cloudinary;
 import org.springframework.beans.factory.annotation.Value;

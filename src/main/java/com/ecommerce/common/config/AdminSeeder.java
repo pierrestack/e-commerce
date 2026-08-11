@@ -1,4 +1,4 @@
-package com.ecommerce.config;
+package com.ecommerce.common.config;
 
 import com.ecommerce.user.entity.User;
 import com.ecommerce.user.enums.Role;

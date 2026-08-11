@@ -1,6 +1,6 @@
 package com.ecommerce.auth.security;
 
-import com.ecommerce.dto.exception.ApiErrorResponse;
+import com.ecommerce.common.dto.ApiErrorResponse;
 import jakarta.servlet.http.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;

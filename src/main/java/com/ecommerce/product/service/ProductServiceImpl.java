@@ -6,7 +6,7 @@ import com.ecommerce.productimage.dto.ProductImageResponseDTO;
 import com.ecommerce.category.entity.Category;
 import com.ecommerce.product.entity.Product;
 import com.ecommerce.productimage.entity.ProductImage;
-import com.ecommerce.exceptions.ResourceNotFoundException;
+import com.ecommerce.common.exception.ResourceNotFoundException;
 import com.ecommerce.category.repository.CategoryRepository;
 import com.ecommerce.product.repository.ProductRepository;
 import com.ecommerce.productimage.service.ProductImageService;

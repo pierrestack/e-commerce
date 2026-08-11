@@ -1,4 +1,4 @@
-package com.ecommerce.config;
+package com.ecommerce.common.config;
 
 import com.ecommerce.auth.security.JwtAccessDeniedHandler;
 import com.ecommerce.auth.security.JwtAuthenticationEntryPoint;
