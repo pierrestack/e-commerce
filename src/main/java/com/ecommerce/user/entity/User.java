@@ -1,6 +1,6 @@
 package com.ecommerce.user.entity;
 
-import com.ecommerce.enums.Role;
+import com.ecommerce.user.enums.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

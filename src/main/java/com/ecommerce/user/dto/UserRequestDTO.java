@@ -1,6 +1,6 @@
 package com.ecommerce.user.dto;
 
-import com.ecommerce.enums.Role;
+import com.ecommerce.user.enums.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
