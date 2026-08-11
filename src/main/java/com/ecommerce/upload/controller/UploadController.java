@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/api/uploads")
+@RequestMapping("/api/v1/uploads")
 @RequiredArgsConstructor
 public class UploadController {
 
