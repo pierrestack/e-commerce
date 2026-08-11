@@ -1,8 +1,8 @@
-package com.ecommerce.controllers;
+package com.ecommerce.productimage.controller;
 
-import com.ecommerce.dto.productImage.ProductImageRequestDTO;
-import com.ecommerce.dto.productImage.ProductImageResponseDTO;
-import com.ecommerce.services.productImage.ProductImageService;
+import com.ecommerce.productimage.dto.ProductImageRequestDTO;
+import com.ecommerce.productimage.dto.ProductImageResponseDTO;
+import com.ecommerce.productimage.service.ProductImageService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

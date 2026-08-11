@@ -3,7 +3,7 @@ package com.ecommerce.category.service;
 import com.ecommerce.category.dto.CategoryRequestDTO;
 import com.ecommerce.category.dto.CategoryResponseDTO;
 import com.ecommerce.product.dto.ProductResponseDTO;
-import com.ecommerce.dto.productImage.ProductImageResponseDTO;
+import com.ecommerce.productimage.dto.ProductImageResponseDTO;
 import com.ecommerce.category.entity.Category;
 import com.ecommerce.category.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;

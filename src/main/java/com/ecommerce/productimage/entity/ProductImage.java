@@ -1,6 +1,6 @@
-package com.ecommerce.entities;
+package com.ecommerce.productimage.entity;
 
-import com.ecommerce.enums.ProductImageType;
+import com.ecommerce.productimage.enums.ProductImageType;
 import com.ecommerce.product.entity.Product;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

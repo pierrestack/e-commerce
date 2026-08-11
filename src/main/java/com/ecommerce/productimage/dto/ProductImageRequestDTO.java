@@ -1,6 +1,6 @@
-package com.ecommerce.dto.productImage;
+package com.ecommerce.productimage.dto;
 
-import com.ecommerce.enums.ProductImageType;
+import com.ecommerce.productimage.enums.ProductImageType;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

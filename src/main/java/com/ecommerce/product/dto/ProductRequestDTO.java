@@ -1,6 +1,6 @@
 package com.ecommerce.product.dto;
 
-import com.ecommerce.dto.productImage.ProductImageRequestDTO;
+import com.ecommerce.productimage.dto.ProductImageRequestDTO;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

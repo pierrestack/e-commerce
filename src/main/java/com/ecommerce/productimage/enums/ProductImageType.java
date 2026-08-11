@@ -1,4 +1,4 @@
-package com.ecommerce.enums;
+package com.ecommerce.productimage.enums;
 
 public enum ProductImageType {
     THUMBNAIL,

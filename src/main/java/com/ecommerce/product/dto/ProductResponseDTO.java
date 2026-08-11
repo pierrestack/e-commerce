@@ -1,6 +1,6 @@
 package com.ecommerce.product.dto;
 
-import com.ecommerce.dto.productImage.ProductImageResponseDTO;
+import com.ecommerce.productimage.dto.ProductImageResponseDTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
