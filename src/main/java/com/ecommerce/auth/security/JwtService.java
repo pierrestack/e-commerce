@@ -1,6 +1,6 @@
 package com.ecommerce.auth.security;
 
-import com.ecommerce.entities.User;
+import com.ecommerce.user.entity.User;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;

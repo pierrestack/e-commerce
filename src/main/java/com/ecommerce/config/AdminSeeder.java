@@ -1,8 +1,8 @@
 package com.ecommerce.config;
 
-import com.ecommerce.entities.User;
+import com.ecommerce.user.entity.User;
 import com.ecommerce.enums.Role;
-import com.ecommerce.repositories.UserRepository;
+import com.ecommerce.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;

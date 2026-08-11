@@ -1,7 +1,7 @@
 package com.ecommerce.auth.security;
 
 
-import com.ecommerce.services.user.CustomUserDetailsService;
+import com.ecommerce.user.service.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,11 +1,11 @@
-package com.ecommerce.services.user;
+package com.ecommerce.user.service;
 
-import com.ecommerce.dto.user.UserRequestDTO;
-import com.ecommerce.dto.user.UserResponseDTO;
-import com.ecommerce.entities.User;
+import com.ecommerce.user.dto.UserRequestDTO;
+import com.ecommerce.user.dto.UserResponseDTO;
+import com.ecommerce.user.entity.User;
 import com.ecommerce.exceptions.DuplicateResourceException;
 import com.ecommerce.exceptions.ResourceNotFoundException;
-import com.ecommerce.repositories.UserRepository;
+import com.ecommerce.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

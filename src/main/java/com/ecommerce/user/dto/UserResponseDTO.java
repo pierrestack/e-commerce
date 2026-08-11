@@ -1,4 +1,4 @@
-package com.ecommerce.dto.user;
+package com.ecommerce.user.dto;
 
 import com.ecommerce.enums.Role;
 

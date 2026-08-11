@@ -1,7 +1,7 @@
-package com.ecommerce.services.user;
+package com.ecommerce.user.service;
 
-import com.ecommerce.dto.user.UserRequestDTO;
-import com.ecommerce.dto.user.UserResponseDTO;
+import com.ecommerce.user.dto.UserRequestDTO;
+import com.ecommerce.user.dto.UserResponseDTO;
 
 import java.util.List;
 
