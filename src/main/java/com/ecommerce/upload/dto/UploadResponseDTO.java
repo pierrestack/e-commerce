@@ -1,7 +1,3 @@
 package com.ecommerce.upload.dto;
 
-public record UploadResponseDTO(
-
-        String imageUrl
-) {
-}
+public record UploadResponseDTO(String imageUrl) {}

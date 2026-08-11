@@ -3,9 +3,9 @@ package com.ecommerce.auth.service;
 import com.ecommerce.auth.dto.AuthRefreshTokenRequestDTO;
 import com.ecommerce.auth.dto.AuthRequestDTO;
 import com.ecommerce.auth.dto.AuthResponseDTO;
+import com.ecommerce.auth.security.JwtService;
 import com.ecommerce.user.entity.User;
 import com.ecommerce.user.repository.UserRepository;
-import com.ecommerce.auth.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,39 +14,37 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class AuthService {
 
-    private final UserRepository userRepository;
-    private final JwtService jwtService;
-    private final PasswordEncoder passwordEncoder;
+  private final UserRepository userRepository;
+  private final JwtService jwtService;
+  private final PasswordEncoder passwordEncoder;
 
-    public AuthResponseDTO login(AuthRequestDTO request) {
+  public AuthResponseDTO login(AuthRequestDTO request) {
 
-        User user = userRepository.findByEmail(request.email())
-                .orElseThrow();
+    User user = userRepository.findByEmail(request.email()).orElseThrow();
 
-        if (!passwordEncoder.matches(request.password(), user.getPassword())) {
-            throw new RuntimeException("Invalid credentials");
-        }
-
-        String accessToken = jwtService.generateAccessToken(user);
-        String refreshToken = jwtService.generateRefreshToken(user);
-
-        return new AuthResponseDTO(accessToken, refreshToken);
+    if (!passwordEncoder.matches(request.password(), user.getPassword())) {
+      throw new RuntimeException("Invalid credentials");
     }
 
-    public AuthResponseDTO refreshToken(AuthRefreshTokenRequestDTO request) {
+    String accessToken = jwtService.generateAccessToken(user);
+    String refreshToken = jwtService.generateRefreshToken(user);
 
-        String username = jwtService.extractUsername(request.refreshToken());
+    return new AuthResponseDTO(accessToken, refreshToken);
+  }
 
-        User user = userRepository.findByUsername(username)
-                .orElseThrow();
+  public AuthResponseDTO refreshToken(AuthRefreshTokenRequestDTO request) {
 
-        if (!jwtService.isTokenValid(request.refreshToken())) {
-            throw new RuntimeException("Invalid refresh token");
-        }
+    String username = jwtService.extractUsername(request.refreshToken());
 
-        String accessToken = jwtService.generateAccessToken(user);
-        String refreshToken = jwtService.generateRefreshToken(user);
+    User user = userRepository.findByUsername(username).orElseThrow();
 
-        return new AuthResponseDTO(accessToken, refreshToken);
+    if (!jwtService.isTokenValid(request.refreshToken())) {
+      throw new RuntimeException("Invalid refresh token");
     }
+
+    String accessToken = jwtService.generateAccessToken(user);
+    String refreshToken = jwtService.generateRefreshToken(user);
+
+    return new AuthResponseDTO(accessToken, refreshToken);
+  }
 }
