@@ -1,11 +1,11 @@
-package com.ecommerce.services.auth;
+package com.ecommerce.auth.service;
 
-import com.ecommerce.dto.auth.AuthRefreshTokenRequestDTO;
-import com.ecommerce.dto.auth.AuthRequestDTO;
-import com.ecommerce.dto.auth.AuthResponseDTO;
+import com.ecommerce.auth.dto.AuthRefreshTokenRequestDTO;
+import com.ecommerce.auth.dto.AuthRequestDTO;
+import com.ecommerce.auth.dto.AuthResponseDTO;
 import com.ecommerce.entities.User;
 import com.ecommerce.repositories.UserRepository;
-import com.ecommerce.services.jwt.JwtService;
+import com.ecommerce.auth.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

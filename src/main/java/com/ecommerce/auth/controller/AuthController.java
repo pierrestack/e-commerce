@@ -1,9 +1,9 @@
-package com.ecommerce.controllers;
+package com.ecommerce.auth.controller;
 
-import com.ecommerce.dto.auth.AuthRefreshTokenRequestDTO;
-import com.ecommerce.dto.auth.AuthRequestDTO;
-import com.ecommerce.dto.auth.AuthResponseDTO;
-import com.ecommerce.services.auth.AuthService;
+import com.ecommerce.auth.dto.AuthRefreshTokenRequestDTO;
+import com.ecommerce.auth.dto.AuthRequestDTO;
+import com.ecommerce.auth.dto.AuthResponseDTO;
+import com.ecommerce.auth.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
 

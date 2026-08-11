@@ -1,8 +1,8 @@
 package com.ecommerce.config;
 
-import com.ecommerce.services.jwt.JwtAccessDeniedHandler;
-import com.ecommerce.services.jwt.JwtAuthenticationEntryPoint;
-import com.ecommerce.services.jwt.JwtAuthenticationFilter;
+import com.ecommerce.auth.security.JwtAccessDeniedHandler;
+import com.ecommerce.auth.security.JwtAuthenticationEntryPoint;
+import com.ecommerce.auth.security.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
